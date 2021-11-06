@@ -4,12 +4,12 @@ from io import open
 
 from setuptools import find_packages, setup
 
-from jwt_utils.meta import VERSION
+from jwt_utils import __version__
 
 
 setup(
     name='pyjwt-utils',
-    version=str(VERSION),
+    version=__version__,
     description='PyJwt-Utils is a wrapper to facility your token encode/decode',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
